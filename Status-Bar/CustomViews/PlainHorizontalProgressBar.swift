@@ -9,7 +9,11 @@ import UIKit
 
 @IBDesignable
 class PlainHorizontalProgressBar: UIView {
-    @IBInspectable var color: UIColor? = .gray
+    @IBInspectable var color: UIColor? = .gray {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     var progress: CGFloat = 0.5 {
         didSet {
             setNeedsDisplay()

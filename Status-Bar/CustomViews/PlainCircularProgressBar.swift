@@ -9,8 +9,13 @@ import UIKit
 
 @IBDesignable
 class PlainCircularProgressBar: UIView {
-    @IBInspectable var color: UIColor? = .gray
-    @IBInspectable var ringWidth: CGFloat = 5.0
+    @IBInspectable var color: UIColor? = .gray {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+    
+    @IBInspectable var ringWidth: CGFloat = 15.0
     
     var progress: CGFloat = 0.5 {
         didSet {
@@ -18,7 +23,7 @@ class PlainCircularProgressBar: UIView {
         }
     }
     
-    private var progressLayer = CAShapeLayer()
+    private let progressLayer = CAShapeLayer()
     private let backgroundMask = CAShapeLayer()
         
     override init(frame: CGRect) {

@@ -15,6 +15,8 @@
 		FC2FCBAF258279240060D6B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2FCBAD258279240060D6B8 /* LaunchScreen.storyboard */; };
 		FC2FCBBA258279240060D6B8 /* Status_BarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FCBB9258279240060D6B8 /* Status_BarTests.swift */; };
 		FC2FCBC5258279240060D6B8 /* Status_BarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FCBC4258279240060D6B8 /* Status_BarUITests.swift */; };
+		FC2FCBD725827BF40060D6B8 /* PlainHorizontalProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FCBD625827BF40060D6B8 /* PlainHorizontalProgressBar.swift */; };
+		FC2FCBDF25828ED30060D6B8 /* PlainCircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FCBDE25828ED30060D6B8 /* PlainCircularProgressBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		FC2FCBC0258279240060D6B8 /* Status-BarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Status-BarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2FCBC4258279240060D6B8 /* Status_BarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status_BarUITests.swift; sourceTree = "<group>"; };
 		FC2FCBC6258279240060D6B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC2FCBD625827BF40060D6B8 /* PlainHorizontalProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainHorizontalProgressBar.swift; sourceTree = "<group>"; };
+		FC2FCBDE25828ED30060D6B8 /* PlainCircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainCircularProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		FC2FCBA12582791D0060D6B8 /* Status-Bar */ = {
 			isa = PBXGroup;
 			children = (
+				FC2FCBD525827B910060D6B8 /* CustomViews */,
 				FC2FCBA22582791D0060D6B8 /* AppDelegate.swift */,
 				FC2FCBA42582791D0060D6B8 /* SceneDelegate.swift */,
 				FC2FCBA62582791D0060D6B8 /* ViewController.swift */,
@@ -126,6 +131,15 @@
 				FC2FCBC6258279240060D6B8 /* Info.plist */,
 			);
 			path = "Status-BarUITests";
+			sourceTree = "<group>";
+		};
+		FC2FCBD525827B910060D6B8 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				FC2FCBD625827BF40060D6B8 /* PlainHorizontalProgressBar.swift */,
+				FC2FCBDE25828ED30060D6B8 /* PlainCircularProgressBar.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +274,9 @@
 			files = (
 				FC2FCBA72582791D0060D6B8 /* ViewController.swift in Sources */,
 				FC2FCBA32582791D0060D6B8 /* AppDelegate.swift in Sources */,
+				FC2FCBD725827BF40060D6B8 /* PlainHorizontalProgressBar.swift in Sources */,
 				FC2FCBA52582791D0060D6B8 /* SceneDelegate.swift in Sources */,
+				FC2FCBDF25828ED30060D6B8 /* PlainCircularProgressBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

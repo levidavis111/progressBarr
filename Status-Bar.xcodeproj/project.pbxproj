@@ -18,6 +18,7 @@
 		FC2FCBD725827BF40060D6B8 /* PlainHorizontalProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FCBD625827BF40060D6B8 /* PlainHorizontalProgressBar.swift */; };
 		FC2FCBDF25828ED30060D6B8 /* PlainCircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FCBDE25828ED30060D6B8 /* PlainCircularProgressBar.swift */; };
 		FC2FCBE725829FEA0060D6B8 /* GradientHorizontalProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FCBE625829FEA0060D6B8 /* GradientHorizontalProgressBar.swift */; };
+		FC2FCBEC2582B1E60060D6B8 /* GradientCircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FCBEB2582B1E60060D6B8 /* GradientCircularProgressBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		FC2FCBD625827BF40060D6B8 /* PlainHorizontalProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainHorizontalProgressBar.swift; sourceTree = "<group>"; };
 		FC2FCBDE25828ED30060D6B8 /* PlainCircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainCircularProgressBar.swift; sourceTree = "<group>"; };
 		FC2FCBE625829FEA0060D6B8 /* GradientHorizontalProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientHorizontalProgressBar.swift; sourceTree = "<group>"; };
+		FC2FCBEB2582B1E60060D6B8 /* GradientCircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCircularProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				FC2FCBD625827BF40060D6B8 /* PlainHorizontalProgressBar.swift */,
 				FC2FCBE625829FEA0060D6B8 /* GradientHorizontalProgressBar.swift */,
 				FC2FCBDE25828ED30060D6B8 /* PlainCircularProgressBar.swift */,
+				FC2FCBEB2582B1E60060D6B8 /* GradientCircularProgressBar.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				FC2FCBE725829FEA0060D6B8 /* GradientHorizontalProgressBar.swift in Sources */,
 				FC2FCBA72582791D0060D6B8 /* ViewController.swift in Sources */,
 				FC2FCBA32582791D0060D6B8 /* AppDelegate.swift in Sources */,
+				FC2FCBEC2582B1E60060D6B8 /* GradientCircularProgressBar.swift in Sources */,
 				FC2FCBD725827BF40060D6B8 /* PlainHorizontalProgressBar.swift in Sources */,
 				FC2FCBA52582791D0060D6B8 /* SceneDelegate.swift in Sources */,
 				FC2FCBDF25828ED30060D6B8 /* PlainCircularProgressBar.swift in Sources */,

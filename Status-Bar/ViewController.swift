@@ -11,6 +11,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var plainHorizontalProgressBarOutlet: PlainHorizontalProgressBar!
     @IBOutlet weak var plainCircularProgessBarOutlet: PlainCircularProgressBar!
     @IBOutlet weak var gradientHorizontalProgressBarOutlest: GradientHorizontalProgressBar!
+    @IBOutlet weak var gradientCircularProgressBarOutlet: GradientCircularProgressBar!
+    
     @IBOutlet weak var horizontalSliderOutlet: UISlider!
     
     override func viewDidLoad() {
@@ -22,6 +24,7 @@ class ViewController: UIViewController {
         plainHorizontalProgressBarOutlet.progress = CGFloat(sender.value)
         plainCircularProgessBarOutlet.progress = CGFloat(sender.value)
         gradientHorizontalProgressBarOutlest.progress = CGFloat(sender.value)
+        gradientCircularProgressBarOutlet.progress = CGFloat(sender.value)
     }
     
 }

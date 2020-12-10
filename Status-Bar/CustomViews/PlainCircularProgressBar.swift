@@ -10,14 +10,17 @@ import UIKit
 @IBDesignable
 class PlainCircularProgressBar: UIView {
     @IBInspectable var color: UIColor? = .gray
+    @IBInspectable var ringWidth: CGFloat = 5.0
+    
     var progress: CGFloat = 0.5 {
         didSet {
             setNeedsDisplay()
         }
     }
     
-    private let progressLayer = CALayer()
-    
+    private var progressLayer = CAShapeLayer()
+    private let backgroundMask = CAShapeLayer()
+        
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupLayers()
@@ -29,19 +32,27 @@ class PlainCircularProgressBar: UIView {
     }
     
     override func draw(_ rect: CGRect) {
-        let backgroundMask = CAShapeLayer()
-        backgroundMask.path = UIBezierPath(roundedRect: rect, cornerRadius: rect.height * 0.25).cgPath
+        let circlePath = UIBezierPath(ovalIn: rect.insetBy(dx: ringWidth / 2, dy: ringWidth / 2))
+        backgroundMask.path = circlePath.cgPath
+       
         layer.mask = backgroundMask
         
-        let progressRect = CGRect(origin: .zero, size: CGSize(width: rect.width * progress, height: rect.height))
-        progressLayer.frame = progressRect
-        
-        layer.addSublayer(progressLayer)
-        progressLayer.backgroundColor = color?.cgColor
+        progressLayer.path = circlePath.cgPath
+        progressLayer.strokeStart = 0
+        progressLayer.strokeEnd = progress
+        progressLayer.strokeColor = color?.cgColor
     }
 
     private func setupLayers() {
+        backgroundMask.lineWidth = ringWidth
+        backgroundMask.fillColor = nil
+        backgroundMask.strokeColor = UIColor.black.cgColor
+        
+        progressLayer.lineWidth = ringWidth
+        progressLayer.fillColor = nil
+        
         layer.addSublayer(progressLayer)
+        layer.transform = CATransform3DMakeRotation(CGFloat(90 * Double.pi / 180), 0, 0, -1)
     }
     
 }

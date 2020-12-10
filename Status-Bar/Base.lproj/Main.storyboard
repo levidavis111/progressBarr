@@ -35,6 +35,19 @@
                                     <action selector="horizontalSliderDidMove:" destination="BYZ-38-t0r" eventType="valueChanged" id="hGB-Sx-hli"/>
                                 </connections>
                             </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9T-v0-nGb" customClass="PlainCircularProgressBar" customModule="Status_Bar" customModuleProvider="target">
+                                <rect key="frame" x="132" y="308" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="fYN-dI-yu7"/>
+                                    <constraint firstAttribute="height" constant="150" id="mCD-er-kfK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.97855405709999999" green="0.73074170829999996" blue="0.8555177491" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -42,8 +55,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oAa-d3-oPz" secondAttribute="trailing" constant="20" id="8zv-WP-Syy"/>
                             <constraint firstItem="oAa-d3-oPz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="CY6-j0-DjY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hvV-nA-UNN" secondAttribute="trailing" constant="50" id="FAF-3N-Bdi"/>
+                            <constraint firstItem="o9T-v0-nGb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TTI-5Z-Sdu"/>
                             <constraint firstItem="hvV-nA-UNN" firstAttribute="top" secondItem="oAa-d3-oPz" secondAttribute="bottom" constant="691" id="UId-cn-H7L"/>
                             <constraint firstItem="oAa-d3-oPz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dlZ-gN-LrW"/>
+                            <constraint firstItem="o9T-v0-nGb" firstAttribute="top" secondItem="oAa-d3-oPz" secondAttribute="bottom" constant="221" id="fiZ-YZ-GJt"/>
                             <constraint firstItem="hvV-nA-UNN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="lG4-4H-IRs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hvV-nA-UNN" secondAttribute="bottom" constant="55" id="oEk-SN-hUh"/>
                         </constraints>
@@ -55,6 +70,7 @@
                     </view>
                     <connections>
                         <outlet property="horizontalSliderOutlet" destination="hvV-nA-UNN" id="FKC-eE-OO2"/>
+                        <outlet property="plainCircularProgessBarOutlet" destination="o9T-v0-nGb" id="164-0T-AFg"/>
                         <outlet property="plainHorizontalProgressBarOutlet" destination="oAa-d3-oPz" id="lek-8Q-r4c"/>
                     </connections>
                 </viewController>

@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var plainHorizontalProgressBarOutlet: PlainHorizontalProgressBar!
+    @IBOutlet weak var plainCircularProgessBarOutlet: PlainCircularProgressBar!
+    
     @IBOutlet weak var horizontalSliderOutlet: UISlider!
     
     override func viewDidLoad() {

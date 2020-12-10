@@ -17,6 +17,7 @@ class PlainHorizontalProgressBar: UIView {
     }
     
     private let progressLayer = CALayer()
+    private let backgroundMask = CAShapeLayer()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,7 +30,6 @@ class PlainHorizontalProgressBar: UIView {
     }
     
     override func draw(_ rect: CGRect) {
-        let backgroundMask = CAShapeLayer()
         backgroundMask.path = UIBezierPath(roundedRect: rect, cornerRadius: rect.height * 0.25).cgPath
         layer.mask = backgroundMask
         

@@ -20,6 +20,7 @@
 		FC2FCBE725829FEA0060D6B8 /* GradientHorizontalProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FCBE625829FEA0060D6B8 /* GradientHorizontalProgressBar.swift */; };
 		FC2FCBEC2582B1E60060D6B8 /* GradientCircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FCBEB2582B1E60060D6B8 /* GradientCircularProgressBar.swift */; };
 		FC2FCBF12582BB410060D6B8 /* RotatingCircularGradientProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FCBF02582BB410060D6B8 /* RotatingCircularGradientProgressBar.swift */; };
+		FC2FCBF72582C4130060D6B8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FCBF62582C4130060D6B8 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		FC2FCBE625829FEA0060D6B8 /* GradientHorizontalProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientHorizontalProgressBar.swift; sourceTree = "<group>"; };
 		FC2FCBEB2582B1E60060D6B8 /* GradientCircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCircularProgressBar.swift; sourceTree = "<group>"; };
 		FC2FCBF02582BB410060D6B8 /* RotatingCircularGradientProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingCircularGradientProgressBar.swift; sourceTree = "<group>"; };
+		FC2FCBF62582C4130060D6B8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				FC2FCBA22582791D0060D6B8 /* AppDelegate.swift */,
 				FC2FCBA42582791D0060D6B8 /* SceneDelegate.swift */,
 				FC2FCBA62582791D0060D6B8 /* ViewController.swift */,
+				FC2FCBF62582C4130060D6B8 /* SecondViewController.swift */,
 				FC2FCBA82582791D0060D6B8 /* Main.storyboard */,
 				FC2FCBAB258279240060D6B8 /* Assets.xcassets */,
 				FC2FCBAD258279240060D6B8 /* LaunchScreen.storyboard */,
@@ -284,6 +287,7 @@
 				FC2FCBE725829FEA0060D6B8 /* GradientHorizontalProgressBar.swift in Sources */,
 				FC2FCBF12582BB410060D6B8 /* RotatingCircularGradientProgressBar.swift in Sources */,
 				FC2FCBA72582791D0060D6B8 /* ViewController.swift in Sources */,
+				FC2FCBF72582C4130060D6B8 /* SecondViewController.swift in Sources */,
 				FC2FCBA32582791D0060D6B8 /* AppDelegate.swift in Sources */,
 				FC2FCBEC2582B1E60060D6B8 /* GradientCircularProgressBar.swift in Sources */,
 				FC2FCBD725827BF40060D6B8 /* PlainHorizontalProgressBar.swift in Sources */,

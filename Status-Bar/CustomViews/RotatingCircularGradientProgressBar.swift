@@ -77,8 +77,10 @@ class RotatingCircularGradientProgressBar: UIView {
     
     private func createAnimation() {
         let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
+        
         rotationAnimation.fromValue = CGFloat(Double.pi / 2)
         rotationAnimation.toValue = CGFloat(2.5 * Double.pi)
+        rotationAnimation.repeatCount = Float.infinity
         rotationAnimation.duration = 4
         
         gradientLayer.add(rotationAnimation, forKey: "rotationAnimation")

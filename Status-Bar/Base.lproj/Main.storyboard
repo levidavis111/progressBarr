@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -74,7 +75,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wJ8-ww-VgD" customClass="RotatingCircularGradientProgressBar" customModule="Status_Bar" customModuleProvider="target">
                                 <rect key="frame" x="132" y="465" width="150" height="150"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
                                         <color key="value" red="0.97855405709999999" green="0.73074170829999996" blue="0.8555177491" alpha="1" colorSpace="calibratedRGB"/>
@@ -122,6 +123,7 @@
                         <outlet property="horizontalSliderOutlet" destination="hvV-nA-UNN" id="FKC-eE-OO2"/>
                         <outlet property="plainCircularProgessBarOutlet" destination="o9T-v0-nGb" id="164-0T-AFg"/>
                         <outlet property="plainHorizontalProgressBarOutlet" destination="oAa-d3-oPz" id="lek-8Q-r4c"/>
+                        <outlet property="rotatingCircularGradientProgressBarOutlet" destination="wJ8-ww-VgD" id="g5G-IM-18N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -133,5 +135,8 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

@@ -72,15 +72,29 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wJ8-ww-VgD" customClass="RotatingCircularGradientProgressBar" customModule="Status_Bar" customModuleProvider="target">
+                                <rect key="frame" x="132" y="465" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.97855405709999999" green="0.73074170829999996" blue="0.8555177491" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wJ8-ww-VgD" firstAttribute="width" secondItem="20o-mB-ZqY" secondAttribute="width" id="0Ra-oq-f0v"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oAa-d3-oPz" secondAttribute="trailing" constant="20" id="8zv-WP-Syy"/>
                             <constraint firstItem="oAa-d3-oPz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="CY6-j0-DjY"/>
                             <constraint firstItem="20o-mB-ZqY" firstAttribute="top" secondItem="o9T-v0-nGb" secondAttribute="bottom" constant="14" id="ELK-AO-kNk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hvV-nA-UNN" secondAttribute="trailing" constant="50" id="FAF-3N-Bdi"/>
                             <constraint firstItem="vjG-p1-Yck" firstAttribute="width" secondItem="oAa-d3-oPz" secondAttribute="width" id="Igi-RR-Qr0"/>
+                            <constraint firstItem="wJ8-ww-VgD" firstAttribute="centerX" secondItem="20o-mB-ZqY" secondAttribute="centerX" id="P6r-0Z-fI6"/>
                             <constraint firstItem="o9T-v0-nGb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TTI-5Z-Sdu"/>
                             <constraint firstItem="hvV-nA-UNN" firstAttribute="top" secondItem="oAa-d3-oPz" secondAttribute="bottom" constant="691" id="UId-cn-H7L"/>
                             <constraint firstItem="20o-mB-ZqY" firstAttribute="centerX" secondItem="o9T-v0-nGb" secondAttribute="centerX" id="d0R-6L-XZ3"/>
@@ -92,6 +106,8 @@
                             <constraint firstItem="vjG-p1-Yck" firstAttribute="centerX" secondItem="oAa-d3-oPz" secondAttribute="centerX" id="oYn-Sm-wRk"/>
                             <constraint firstItem="vjG-p1-Yck" firstAttribute="top" secondItem="oAa-d3-oPz" secondAttribute="bottom" constant="8" id="ouB-q0-gaJ"/>
                             <constraint firstItem="20o-mB-ZqY" firstAttribute="height" secondItem="o9T-v0-nGb" secondAttribute="height" id="qic-Wy-bIB"/>
+                            <constraint firstItem="wJ8-ww-VgD" firstAttribute="top" secondItem="20o-mB-ZqY" secondAttribute="bottom" constant="14" id="qrb-QR-flB"/>
+                            <constraint firstItem="wJ8-ww-VgD" firstAttribute="height" secondItem="20o-mB-ZqY" secondAttribute="height" id="rSF-B6-oyY"/>
                             <constraint firstItem="20o-mB-ZqY" firstAttribute="width" secondItem="o9T-v0-nGb" secondAttribute="width" id="uIL-Cc-lUZ"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
